@@ -1,0 +1,37 @@
+**This challenge was an interview question that I completed for a graduate job application. I do not own the question. I do own the code**
+
+
+
+You have been asked to take over developing software for calculating bills at the new hip coffee shop 'Coffee Snobs'.
+Luckily, because they believe in the purity of the bean they only offer two types of coffee 'regular' ($2.11) and 'decaf' ($1.51)
+
+ 
+Part A:
+ 
+Create three classes called Beverage, RegularCoffee and DecafCoffee. 
+RegularCoffee and DecafCoffee must inherit from Beverage.
+
+Each class should define two public methods:
+   * getCost() that returns the appropriate cost of the coffee as a float
+   * getDescription() that returns the name of the type of coffee as a string
+ 
+Note: Beverage can return any value you like for these methods.
+
+
+Part B: 
+ 
+Six months later, they have decided to go all out on the extras, so each coffee can have none, any or all (but no more than one of each) of the following:
+    'milk' ($0.53), 'sugar' ($0.17), 'cream' ($0.73) and 'sprinkles' ($0.29)
+ 
+And they also sell 'xigua' at $1.03 per slice (it's a kind of watermelon).
+ 
+The manager wants you to write software to calculate and output the cost of any order.
+The orders are given as comma-separated string of the form: 
+    "1 x regular + milk + sugar, 1 x decaf + sprinkles"
+ 
+For example, for table one's order the input and output would be:
+    Input: "1 x regular + milk + sugar, 1 x decaf + sprinkles, 2 x xigua"
+    Output: "Final bill is $6.67"
+
+However, there is a catch: the previous developer (before they were fired!) wrote three classes called Beverage, RegularCofee and DecafCoffee.
+The manager insists that you MUST USE those classes in your software but MUST NOT modify them.
